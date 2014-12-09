@@ -6,4 +6,5 @@ from django.http import HttpResponse
 # Remember each function/view the first argument/input has to be request
 
 def index(request):
-	return HttpResponse("This is the index page")
+	return render(request, 'polls/maya.html' ,
+		{})
